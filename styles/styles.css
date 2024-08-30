@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    /** Structure **/
+    @apply h-full;
+}
+
+body {
+    /** Structure **/
+    @apply mx-auto max-w-screen-lg md:flex h-full;
+}
+
+header {
+    /** Structure **/
+    @apply my-4;
+}
+
+main {
+    /** Structure **/
+    @apply sm:w-3/4 px-4;
+
+    /** Children **/
+    section {
+        /** Structure **/
+        @apply my-4 px-2;
+        /** Colours & borders **/
+        @apply border border-slate-200 rounded;
+    }
+}
+
+
+h1,h2,h3 {
+    /** Structure **/
+    @apply my-2;
+    /** Typography **/
+    @apply font-bold;
+}
+
+h1 {
+    /** Typography **/
+    @apply text-4xl;
+}
+
+h2 {
+    /** Structure **/
+    @apply flex justify-between items-center max-w-96;
+    /** Typography **/
+    @apply text-xl;
+
+    /** Children **/
+    span {
+        /** Structure **/
+        @apply px-2;
+        /** Colours & Borders **/
+        @apply border border-slate-300 rounded-lg;
+        /** typography **/
+        @apply text-xs font-normal;
+
+        &.progress {
+            @apply bg-green-100;
+        }
+    }
+}
+
+p {
+    /** Structure **/
+    @apply py-2;
+}
+
+section.bio {
+
+    /** Structure **/
+    @apply h-full sm:w-1/4 py-4 px-2;
+    /** Colours & borders **/
+    @apply bg-sky-200 border-l-2 border-slate-500;
+
+    /** Children **/
+    img {
+        /** Colours & borders **/
+        @apply rounded-full;
+    }
+
+    ul {
+        /** Typography **/
+        @apply list-inside list-disc;
+    }
+}
