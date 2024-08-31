@@ -6,7 +6,7 @@ My CV website
 Input styles are in the `styles` directory.
 
 ```bash
-npx tailwindcss -i ./styles/styles.css -o ./src/css/styles.css --watch
+npx tailwindcss -i ./styles/styles.css -o ./docs/css/styles.css --watch
 ```
 
-Output is the `./src/css/styles.css` file.
+Output is the `./docs/css/styles.css` file.
