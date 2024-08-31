@@ -24,7 +24,13 @@ main {
     /** Children **/
     section {
         /** Structure **/
-        @apply my-4 px-2;
+        @apply my-4 px-4;
+
+        /** Children **/
+        &.expandable {
+            /** Colours & borders **/
+            @apply border border-slate-300 rounded;
+        }
     }
 }
 
@@ -93,13 +99,15 @@ h2, h3 {
 .expandable > h2, .expandable > h3 {
     /** Structure **/
     @apply flex justify-between;
+    /** Colours & borders **/
+    @apply cursor-pointer bg-slate-100 shadow shadow-slate-400;
 
-    /** Psuedo children **/
-    &::after {
-        content: 'Expand';
-
+    /** Children **/
+    & span.handle {
         /** Typography **/
-        @apply text-xs font-normal;
+        @apply text-black font-bold;
+        /** Colours & borders **/
+        @apply border-2 bg-white;
     }
 }
 
@@ -157,6 +165,10 @@ section.bio {
     & h2 {
         /** Structure **/
         @apply block sm:flex mx-auto w-auto sm:mx-0;
+    }
+
+    & p a {
+        @apply decoration-dotted decoration-blue-900 underline;
     }
 
     & ul {
