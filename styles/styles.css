@@ -31,6 +31,11 @@ main {
 ul {
     /** Typography **/
     @apply list-inside list-disc;
+
+    & ul {
+        /** Structure **/
+        @apply pl-6;
+    }
 }
 
 h1,h2,h3 {
@@ -142,13 +147,36 @@ ul.cloud {
 
 section.bio {
     /** Structure **/
-    @apply h-full sm:w-1/4 py-4 px-2 sm:fixed sm:top-0 sm:right-0;
+    @apply h-full sm:w-1/4 py-4 px-6 sm:fixed sm:top-0 sm:right-0;
+    /** Typography **/
+    @apply text-center sm:text-left;
     /** Colours & borders **/
-    @apply bg-sky-50 border-l-2 border-slate-500;
+    @apply bg-sky-50 border-t-2 border-slate-500 sm:border-l-2 sm:border-slate-500;
 
     /** Children **/
-    img {
+    & h2 {
+        /** Structure **/
+        @apply block sm:flex mx-auto w-auto sm:mx-0;
+    }
+
+    & ul {
+        /** Typography **/
+        @apply list-none sm:list-disc;
+    }
+
+    & > img {
+        /** Structure **/
+        @apply max-w-52 mx-auto;
         /** Colours & borders **/
         @apply rounded-full;
+    }
+
+    & > ul > li:has(img) {
+
+        /** Children **/
+        img {
+            /** Structure **/
+            @apply mx-auto max-w-52 md:max-w-20 rounded lg:float-right;
+        }
     }
 }
