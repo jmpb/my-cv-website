@@ -25,17 +25,27 @@ main {
     section {
         /** Structure **/
         @apply my-4 px-2;
-        /** Colours & borders **/
-        @apply border border-slate-200 rounded;
     }
 }
 
+ul {
+    /** Typography **/
+    @apply list-inside list-disc;
+}
 
 h1,h2,h3 {
     /** Structure **/
-    @apply my-2;
+    @apply my-2 p-4;
     /** Typography **/
     @apply font-bold;
+    /** Colours & borders **/
+    @apply border-b border-slate-300 rounded-xl;
+
+    /** Subheadings **/
+    & > span {
+        /** Typography **/
+        @apply text-xs font-normal;
+    }
 }
 
 h1 {
@@ -45,7 +55,7 @@ h1 {
 
 h2 {
     /** Structure **/
-    @apply flex justify-between items-center max-w-96;
+    @apply flex justify-between items-center;
     /** Typography **/
     @apply text-xl;
 
@@ -61,6 +71,28 @@ h2 {
         &.progress {
             @apply bg-green-100;
         }
+
+        &.complete {
+            @apply bg-blue-100;
+        }
+    }
+}
+
+h3 {
+    /** Typography **/
+    @apply text-sm;
+}
+
+.expandable > h2, .expandable > h3 {
+    /** Structure **/
+    @apply flex justify-between;
+
+    /** Psuedo children **/
+    &::after {
+        content: 'Expand';
+
+        /** Typography **/
+        @apply text-xs font-normal;
     }
 }
 
@@ -69,21 +101,38 @@ p {
     @apply py-2;
 }
 
+table {
+    /** Structure **/
+    @apply p-2 m-2 w-max;
+    /** Typography **/
+    @apply text-xs;
+    /** Colours & borders **/
+    @apply border border-slate-300;
+
+    /** Children **/
+    th {
+        /** Typogrpahy **/
+        @apply font-bold;
+    }
+
+    th, td {
+        /** Structure **/
+        @apply p-2;
+        /** Colours & borders **/
+        @apply border border-slate-300;
+    }
+}
+
 section.bio {
 
     /** Structure **/
     @apply h-full sm:w-1/4 py-4 px-2;
     /** Colours & borders **/
-    @apply bg-sky-200 border-l-2 border-slate-500;
+    @apply bg-sky-50 border-l-2 border-slate-500;
 
     /** Children **/
     img {
         /** Colours & borders **/
         @apply rounded-full;
-    }
-
-    ul {
-        /** Typography **/
-        @apply list-inside list-disc;
     }
 }
