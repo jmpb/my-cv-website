@@ -123,10 +123,24 @@ table {
     }
 }
 
-section.bio {
-
+ul.cloud {
     /** Structure **/
-    @apply h-full sm:w-1/4 py-4 px-2;
+    @apply flex flex-wrap;
+    /** Typography **/
+    @apply list-none;
+
+    /** Children **/
+    li {
+        /** Structure **/
+        @apply px-4 py-2 m-2;
+        /** Colours & borders **/
+        @apply border border-slate-300 rounded-full bg-sky-900 text-white;
+    }
+}
+
+section.bio {
+    /** Structure **/
+    @apply h-full sm:w-1/4 py-4 px-2 sm:fixed sm:top-0 sm:right-0;
     /** Colours & borders **/
     @apply bg-sky-50 border-l-2 border-slate-500;
 
