@@ -116,6 +116,10 @@ p {
     @apply py-2;
 }
 
+p a {
+    @apply decoration-dotted decoration-blue-900 underline;
+}
+
 table {
     /** Structure **/
     @apply p-2 m-2 w-max;
@@ -165,10 +169,6 @@ section.bio {
     & h2 {
         /** Structure **/
         @apply block sm:flex mx-auto w-auto sm:mx-0;
-    }
-
-    & p a {
-        @apply decoration-dotted decoration-blue-900 underline;
     }
 
     & ul {
