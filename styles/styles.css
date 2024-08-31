@@ -58,9 +58,16 @@ h2 {
     @apply flex justify-between items-center;
     /** Typography **/
     @apply text-xl;
+}
 
-    /** Children **/
-    span {
+h3 {
+    /** Typography **/
+    @apply text-sm;
+}
+
+h2, h3 {
+
+    & > span {
         /** Structure **/
         @apply px-2;
         /** Colours & Borders **/
@@ -76,11 +83,6 @@ h2 {
             @apply bg-blue-100;
         }
     }
-}
-
-h3 {
-    /** Typography **/
-    @apply text-sm;
 }
 
 .expandable > h2, .expandable > h3 {
