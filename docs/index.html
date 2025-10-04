@@ -12,12 +12,18 @@
     <main>
         <header>
             <h1>James Baker - Developer</h1>
-            <p>Welcome, below I have listed my past experience as well as what I aim to achieve in the future. There are examples of my work on my <a href="https://github.com/jmpb" alt="My profile on Github">Github profile</a></p>
+            <p>Welcome, below I have listed my past experience as well as what I aim to achieve in the future. There are examples of my work on my <a href="https://github.com/jmpb" alt="My profile on Github" class="decoration-dotted decoration-blue-900 underline">Github profile</a>.</p>
+            <h3>Summary of experience:</h3>
+            <ol class="list-decimal ml-8">
+                <li>10+ years experience in software development, particularly on the web</li>
+                <li>Completed a degree in IT &amp; Computing with the OU. Results pending, expecting a 2:1</li>
+                <li>Versed in a range of languages but keen to work in Python</li>
+            </ol>
         </header>
         <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
-            <h2>Education<span class="progress">In progress</span><span class="handle" class="handle" @click="toggle($el)">Collapse</span></h2>
+            <h2>Education<span class="complete">Complete</span><span class="handle" class="handle" @click="toggle($el)">Collapse</span></h2>
             <div x-show="open">
-                <p>I am still in part-time education with the Open University where I have been studying for a <strong>Bachelor's degree in IT &amp; Computing with a focus on software development</strong> since 2014.</p>
+                <p>I have just completed part-time education with the Open University where I have been studying for a <strong>Bachelor's degree in IT &amp; Computing with a focus on software development</strong> since 2014. <strong>I am predicted to achieve a 2:1 grade.</strong></p>
                 <p>Doing my degree has solidified my understanding of practices and also taught me some new IT &amp; Computing skills such as:</p>
                 <ul>
                     <li>Developing mobile apps</li>
@@ -28,7 +34,23 @@
                     <li>Self reflection</li>
                 </ul>
                 <div class="expandable" x-data="Expandable()" initState="">
-                    <h3 class="handle">Stage 1<span class="progress">2014-2016</span><span class="handle" @click="toggle($el)">Expand</span></h3>
+                    <h3 class="handle">Project<span class="progress">2025</span><span class="handle" @click="toggle($el)">Expand</span></h3>
+                    <div x-show="open">
+                        <p>For my end of degree project I decided to draw on my experience of one of my hobbies and develop an application which would aid in the management of tabletop gaming tournaments. Through this exercise I practiced and gained new skills including;
+                            <ul>
+                                <li>Test Driven Development (TDD)</li>
+                                <li>React (UI)</li>
+                                <li>End-to-End (E2E) testing</li>
+                                <li>UI Design</li>
+                                <li>Flask (Python API/backend)</li>
+                                <li>Dealing with stakeholders</li>
+                                <li>And more...</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="expandable" x-data="Expandable()" initState="">
+                    <h3 class="handle">Stage 3<span class="progress">2019-2025</span><span class="handle" @click="toggle($el)">Expand</span></h3>
                     <table x-show="open">
                         <tr>
                             <th>Module</th>
@@ -36,19 +58,19 @@
                             <th>Grade</th>
                         </tr>
                         <tr>
-                            <td>My Digital Life</td>
-                            <td>2014</td>
+                            <td>Web Technologies</td>
+                            <td>2019</td>
+                            <td>Grade 2 Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>2020</td>
+                            <td>Grade 2 Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Web, Mobile and Cloud Technologies</td>
+                            <td>2021</td>
                             <td>Distinction</td>
-                        </tr>
-                        <tr>
-                            <td>Technologies in Practice</td>
-                            <td>2015</td>
-                            <td>Pass</td>
-                        </tr>
-                        <tr>
-                            <td>Discovering Mathetmatics</td>
-                            <td>2016</td>
-                            <td>Pass</td>
                         </tr>
                     </table>
                 </div>
@@ -78,7 +100,7 @@
                     </table>
                 </div>
                 <div class="expandable" x-data="Expandable()" initState="">
-                    <h3 class="handle">Stage 3<span class="progress">2019-present</span><span class="handle" @click="toggle($el)">Expand</span></h3>
+                    <h3 class="handle">Stage 1<span class="progress">2014-2016</span><span class="handle" @click="toggle($el)">Expand</span></h3>
                     <table x-show="open">
                         <tr>
                             <th>Module</th>
@@ -86,19 +108,19 @@
                             <th>Grade</th>
                         </tr>
                         <tr>
-                            <td>Web Technologies</td>
-                            <td>2019</td>
-                            <td>Grade 2 Pass</td>
-                        </tr>
-                        <tr>
-                            <td>Software Engineering</td>
-                            <td>2020</td>
-                            <td>Grade 2 Pass</td>
-                        </tr>
-                        <tr>
-                            <td>Web, Mobile and Cloud Technologies</td>
-                            <td>2021</td>
+                            <td>My Digital Life</td>
+                            <td>2014</td>
                             <td>Distinction</td>
+                        </tr>
+                        <tr>
+                            <td>Technologies in Practice</td>
+                            <td>2015</td>
+                            <td>Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Discovering Mathetmatics</td>
+                            <td>2016</td>
+                            <td>Pass</td>
                         </tr>
                     </table>
                 </div>
@@ -123,39 +145,6 @@
                         </tr>
                     </table>
                 </div>
-            </div>
-        </section>
-        <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="">
-            <h2>Junior Web Developer<span>2007-2008</span><span class="complete">Complete</span><span class="handle" @click="toggle($el)">Expand</span></h2>
-            <div x-show="open">
-                <p>After school I attained a job as a junior web developer for Specnet Ltd, a small web design company located in Earl Shilton. I joined a husband and wife team who had various local clients.</p>
-                <p>My main responsibilities were;</p>
-                <ul>
-                    <li>Minor HTML changes on client request</li>
-                    <li>Developing new features</li>
-                    <li>Aiding the main developer with implementation</li>
-                    <li>Maintaining web hosting accounts</li>
-                    <li>Uploading websites to hosting</li>
-                    <li>Populating SEO meta data</li>
-                </ul>
-                <p>This was a rewarding role where I really got to cut my teeth on real-world web development. My greatest achievements at the time were implementing a search feature for the Small Business Forum website and creating all the graphics for a local car garage website.</p>
-            </div>
-        </section>
-        <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="">
-            <h2>Trainee Game Developer<span>2008-2009</span><span class="complete">Complete</span><span class="handle" @click="toggle($el)">Expand</span></h2>
-            <div x-show="open">
-                <p>During the 2008 recession I took back to studying, this time looking to game development. I joined the Train2Game developer program which used a study from home model.</p>
-                <p>This program taught me a large amount about programming in C++, libraries, using graphics engines, spriting and a lot of lower level functionality that is usually abstracted from higher level development.</p>
-                <p>I was introduced to:</p>
-                <ul>
-                    <li>Pathing algorithms (Dijkstra, A*)</li>
-                    <li>Graphics engines (DirectDraw)</li>
-                    <li>Game loops</li>
-                    <li>Bitwise operations</li>
-                    <li>Memory management</li>
-                    <li>Threading</li>
-                </ul>
-                <p>This course bought a much deeper understanding of how programs work and my most-lasting takeaway was of Object Oriented programming (OOP).</p>
             </div>
         </section>
         <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
@@ -189,7 +178,7 @@
                     <li>pip</li>
                     <li>gunicorn</li>
                     <li>AlpineJS</li>
-                    <li>php5.6 - php8.1</li>
+                    <li>php5.6 - php8.3</li>
                     <li>Composer</li>
                     <li>Git cli/Github</li>
                     <li>TailwindCSS</li>
@@ -219,6 +208,39 @@
                 </ul>
             </div>
         </section>
+        <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="">
+            <h2>Trainee Game Developer<span>2008-2009</span><span class="complete">Complete</span><span class="handle" @click="toggle($el)">Expand</span></h2>
+            <div x-show="open">
+                <p>During the 2008 recession I took back to studying, this time looking to game development. I joined the Train2Game developer program which used a study from home model.</p>
+                <p>This program taught me a large amount about programming in C++, libraries, using graphics engines, spriting and a lot of lower level functionality that is usually abstracted from higher level development.</p>
+                <p>I was introduced to:</p>
+                <ul>
+                    <li>Pathing algorithms (Dijkstra, A*)</li>
+                    <li>Graphics engines (DirectDraw)</li>
+                    <li>Game loops</li>
+                    <li>Bitwise operations</li>
+                    <li>Memory management</li>
+                    <li>Threading</li>
+                </ul>
+                <p>This course bought a much deeper understanding of how programs work and my most-lasting takeaway was of Object Oriented programming (OOP).</p>
+            </div>
+        </section>
+        <section class="expandable" x-data="Expandable()" x-init="init($el)" initState="">
+            <h2>Junior Web Developer<span>2007-2008</span><span class="complete">Complete</span><span class="handle" @click="toggle($el)">Expand</span></h2>
+            <div x-show="open">
+                <p>After school I attained a job as a junior web developer for Specnet Ltd, a small web design company located in Earl Shilton. I joined a husband and wife team who had various local clients.</p>
+                <p>My main responsibilities were;</p>
+                <ul>
+                    <li>Minor HTML changes on client request</li>
+                    <li>Developing new features</li>
+                    <li>Aiding the main developer with implementation</li>
+                    <li>Maintaining web hosting accounts</li>
+                    <li>Uploading websites to hosting</li>
+                    <li>Populating SEO meta data</li>
+                </ul>
+                <p>This was a rewarding role where I really got to cut my teeth on real-world web development. My greatest achievements at the time were implementing a search feature for the Small Business Forum website and creating all the graphics for a local car garage website.</p>
+            </div>
+        </section>
     </main>
     <section class="bio">
         <img src="./images/me.jpg" alt="A photograph of me, James.">
@@ -227,7 +249,7 @@
             <li>Based in Leicestershire</li>
             <li>Clean driving license and car</li>
             <li>Pet parakeet called Echo<img src="./images/Echo.jpg" alt="Kakariki parakeet called Echo"></li>
-            <li>Own house where I enjoy;
+            <li>At home I enjoy;
                 <ul>
                     <li>Tabletop games</li>
                     <li>Being creative</li>
@@ -238,7 +260,7 @@
                 </ul>
             </li>
         </ul>
-        <p><a href="https://github.com/jmpb" alt="My profile on Github">My profile on Github</a></p>
+        <p><a href="https://github.com/jmpb" target="_blank" alt="My profile on Github">My profile on Github</a></p>
     </section>
     <script type="text/javascript">
         document.addEventListener('alpine:init', () => {
