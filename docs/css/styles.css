@@ -857,6 +857,12 @@ p a {
   text-decoration-style: dotted;
 }
 
+p a {
+  text-decoration-line: underline;
+  text-decoration-color: #1e3a8a;
+  text-decoration-style: dotted;
+}
+
 table {
   margin: calc(var(--spacing) * 2);
   width: max-content;
