@@ -120,6 +120,7 @@ h2, h3 {
 
     /** Children **/
     & span.handle {
+        display: none;
         /** Typography **/
         @apply text-black font-bold;
         /** Colours & borders **/
@@ -193,6 +194,7 @@ section.bio {
     }
 
     & > img {
+        display: none;
         /** Structure **/
         @apply max-w-52 mx-auto;
         /** Colours & borders **/
@@ -203,6 +205,7 @@ section.bio {
 
         /** Children **/
         img {
+            display: none;
             /** Structure **/
             @apply mx-auto max-w-52 md:max-w-20 rounded-sm lg:float-right;
         }
