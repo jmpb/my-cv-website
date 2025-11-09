@@ -74,7 +74,8 @@
                         </tr>
                     </table>
                 </div>
-                <div class="expandable" x-data="Expandable()" initState="">
+                <div class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
+                <div class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
                     <h3 class="handle">Stage 2<span class="progress">2016-2018</span><span class="handle" @click="toggle($el)">Expand</span></h3>
                     <table x-show="open">
                         <tr>
@@ -124,7 +125,8 @@
                         </tr>
                     </table>
                 </div>
-                <div class="expandable" x-data="Expandable()" initState="">
+                <div class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
+                <div class="expandable" x-data="Expandable()" x-init="init($el)" initState="open">
                     <h3 class="handle">Grade Explanation<span class="handle" @click="toggle($el)">Expand</span></h3>
                     <table x-show="open">
                         <tr>
@@ -245,8 +247,17 @@
     <section class="bio">
         <img src="./images/me.jpg" alt="A photograph of me, James.">
         <h2>Bio</h2>
+        <p><strong>Name:</strong> James Baker</p>
+        <p><strong>Email:</strong> jmpb89@hotmail.co.uk</p>
+        <p><strong>Phone:</strong> 07801 538855</p>
+        <p><strong>Website:</strong> https://jamesbaker.website</p>
+        <p><strong>Name:</strong> James Baker</p>
+        <p><strong>Email:</strong> jmpb89@hotmail.co.uk</p>
+        <p><strong>Phone:</strong> 07801 538855</p>
+        <p><strong>Website:</strong> https://jamesbaker.website</p>
         <ul>
-            <li>Based in Leicestershire</li>
+            <li>Based in Hinckley, Leicestershire</li>
+            <li>Based in Hinckley, Leicestershire</li>
             <li>Clean driving license and car</li>
             <li>Pet parakeet called Echo<img src="./images/Echo.jpg" alt="Kakariki parakeet called Echo"></li>
             <li>At home I enjoy;
