@@ -19,7 +19,7 @@ html {
 
 body {
     /** Structure **/
-    @apply mx-auto md:flex h-full;
+    @apply mx-auto max-w-[100%] md:flex h-full;
 }
 
 header {
